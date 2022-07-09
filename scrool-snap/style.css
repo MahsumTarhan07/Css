@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    display: flex;
+    gap: 20px;
+    scroll-snap-type:  x mandatory;
+    max-width: 500px;
+    overflow-x: auto;
+    box-shadow: 0 3px 10px 0  rgba(#000, 0.1);
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 16px;
+    padding: 16px;
+    margin: 3rem auto 0;
+    border-radius: 5px;
+}
+.section_item{
+    display: flex;
+    scroll-snap-align:start;
+    scroll-snap-stop: always;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0  300px;
+    width: 30px;
+    height: 150px;
+    background-color: #ccc;
+    font-size: 21px;
+
+}
+
+.bg-1{
+    background-color: aqua;
+}
+
+.bg-2{
+    background-color: rgb(97, 7, 214);
+}
+.bg-3{
+    background-color: rgb(0, 255, 0);
+}
+.bg-4{
+    background-color: rgb(217, 255, 0);
+}
+.bg-5{
+    background-color: rgb(255, 0, 212);
+}
