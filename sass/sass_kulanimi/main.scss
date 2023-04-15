@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+$primary-color:#ffb8b8;
+$color: rgb(31, 212, 14);
+$link-color: #fff;
+$border-color: #67e6dc;
+$header: #ff3838;
+$boxs: #2b14ff;
+
+@mixin border($width,$style,$color){
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}
+
+
+.box-area{
+    float: left;
+    display: block;
+    height: 200px;
+    width: 200px;
+    background-color: #ffb8b8;
+    border: 1px solid red;
+    margin: 10px;
+}
+
+body{
+    background-color: $color;
+
+    .container{
+        height: 1000px;
+        width: 900px;
+        margin: 0px auto;
+        background-color: $border-color;
+        
+        header{
+            height: 50px;
+            width: 900px;
+            background-color: $header;
+            ul{
+                li{
+                    float: left;
+                    a{
+                        display: block;
+                        height: 100px;
+                        line-height: 50px;
+                        text-align: center;
+                        width: 150px;
+                        text-decoration: none;
+                        font-size: 24px;
+                        color: $primary-color;
+                        &:hover{
+                            color: $link-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .boxs{
+        display: block;
+        height: 500px;
+        width: 700px;
+        margin: 20px;
+        background-color: $boxs;
+        
+    }
+    .box1{
+        @extend.box-area;
+        @include border(10px,dashed,rgb(255, 21, 196));
+    }
+    .box2{
+        @extend.box-area;
+    }
+
+}
