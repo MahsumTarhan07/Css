@@ -1,0 +1,90 @@
+body {
+  font-size: sans-serif;
+  font-size: 18px;
+  color: red;
+}
+body nav {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+body nav ul {
+  text-align: center;
+  padding: 10px;
+}
+body nav ul li {
+  border: 1px solid black;
+  width: 70px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+body nav ul li:hover {
+  background-color: aqua;
+  font-size: 21px;
+}
+body nav ul .settings {
+  text-align: center;
+}
+body #container {
+  display: block;
+  float: left;
+  width: 680px;
+  width: 300px;
+}
+body #container #title {
+  text-align: left;
+  margin-left: 25px;
+  text-decoration: none;
+  margin-bottom: -10px;
+  color: black;
+}
+body .productList {
+  display: block;
+}
+body .productList li {
+  width: auto;
+  text-decoration: none;
+  padding: 10px;
+  list-style-type: none;
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
+  margin: 5px;
+}
+body .productList li a {
+  text-decoration: none;
+  color: black;
+}
+body div #content {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: left;
+}
+body .contents {
+  display: block;
+  float: right;
+  margin-top: 0;
+  width: 750px;
+  margin-left: 10px;
+}
+body .contents .content-title {
+  color: black;
+}
+body .contents .content-p {
+  color: black;
+  text-align: left;
+  font-size: 20px;
+}
+@media screen and (max-width: 710px) {
+  body .contents {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 5px;
+    color: red;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,140 @@
+$myFont : sans-serif;
+$myColor : red;
+$myFontSize: 18px;
+$myWidth: 680px;
+$max-width-contents:698px;
+
+
+body {
+    margin: 0;
+    padding-bottom: 100px;
+    min-height: 100vh;
+    position: relative;
+    font-size: $myFont;
+    font-size: $myFontSize;
+    color: $myColor;
+
+    nav {
+        display: block;
+        position: relative;
+        width: 100%;
+
+        ul {
+            text-align: center;
+            padding: 10px;
+
+            li {
+                border: 1px solid black;
+                width: 70px;
+                border-radius: 5px;
+                background-color: blue;
+                color: white;
+                display: inline-block;
+                padding: 10px;
+                text-align: center;
+            }
+
+            li:hover {
+                background-color: aqua;
+                font-size: 21px;
+
+            }
+
+            .settings {
+                text-align: center;
+            }
+        }
+    }
+
+    #container {
+        display: block;
+        float: left;
+        width: $myWidth;
+        width: 300px;
+
+        #title {
+            text-align: left;
+            margin-left: 25px;
+            text-decoration: none;
+            margin-bottom: -10px;
+            color: black;
+        }
+
+    }
+
+    .productList {
+        display: block;
+
+        li {
+            width: auto;
+            text-decoration: none;
+            padding: 10px;
+            list-style-type: none;
+            cursor: pointer;
+            color: black;
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    div #content {
+        display: inline-block;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+
+
+    .contents {
+        display: block;
+        float: right;
+        margin-top: 0;
+        width: 750px;
+        margin-left: 10px;
+
+        .content-title {
+            color: black;
+        }
+
+        .content-p {
+            color: black;
+            text-align: left;
+            font-size: 20px;
+        }
+    }
+
+    .contents {
+        @media screen and (max-width: 710px) {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin: 5px;
+            color: red;
+        }
+    }
+        
+    #footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+    }
+}
+
+
+@media screen and(max-width:709px) {
+    #container{
+        width: 100%;
+        text-align: center;
+        .product{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+}
